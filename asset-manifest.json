@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/fcc-frontend-challange-02_markdown-previewer/static/css/main.531fa648.css",
+    "main.js": "/fcc-frontend-challange-02_markdown-previewer/static/js/main.92472166.js",
+    "static/media/markdown.md": "/fcc-frontend-challange-02_markdown-previewer/static/media/markdown.4e75c224d4cad5bb18d3.md",
+    "index.html": "/fcc-frontend-challange-02_markdown-previewer/index.html",
+    "main.531fa648.css.map": "/fcc-frontend-challange-02_markdown-previewer/static/css/main.531fa648.css.map",
+    "main.92472166.js.map": "/fcc-frontend-challange-02_markdown-previewer/static/js/main.92472166.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.531fa648.css",
+    "static/js/main.92472166.js"
+  ]
+}
