@@ -7,6 +7,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: rgb(213, 211, 211);
+  overflow-y: scroll
 }
 
 #wrapper {
@@ -21,6 +22,23 @@ body {
 	min-width: 400px;
   max-width: 600px;
 	height: 400px;
+  /* transition: all 0.5s ease-in; */
+  /* visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear; */
+}
+
+.expanded {
+  height: calc(100vh - 100px) !important;
+  margin: 50px 0 200px 0;
+  /* transition: all 0.5s ease-in; */
+}
+
+.hidden {
+  /* visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear; */
+  display: none;
 }
 
 #editor-header {
@@ -46,13 +64,9 @@ body {
   font-size: 40px;
 }
 
-#editor-header div h1 {
-
-}
-
 #editor {
   width: 100%;
-  height: 340px;
+  height: calc(100% - 60px);
   border: none;
   padding: 3px 5px;
 }
@@ -66,8 +80,7 @@ body {
 	width: 80vw;
 	min-width: 400px;
   max-width: 800px;
-	/* height: 400px; */
-  /* border: 1px solid rgb(162, 162, 162); */
+  /* margin: 50px 0 300px 0; */
 }
 
 #preview-header {
@@ -78,20 +91,15 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 20px;
-	
-}
-
-#preview-header div h1 {
-
+	padding: 0 20px;	
 }
 
 #preview {
   padding: 15px;
   width: 100%;
-  /* height: 340px; */
   border: none;
   background-color: rgb(240, 240, 240);
+  margin-bottom: 100px;
 }
 
 #preview pre {
@@ -126,4 +134,23 @@ table, th, td {
 
 #preview img {
   max-width: 90%;
+}
+
+#credentials-box {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 30px;
+  /* transition: all 0.5s ease-in; */
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#credentials-box p, #credentials-box a {
+  color: darkgray;
+  font-size: 12px;
 }
